@@ -7,6 +7,4 @@ if(MSVC)
     add_compile_options(/utf-8)
 endif()
 
-add_executable(usb_mouse_monitor main.c)
-
-target_link_libraries(usb_mouse_monitor PRIVATE setupapi kernel32 user32)
+add_executable(usb_mouse_monitor src/main.c)
